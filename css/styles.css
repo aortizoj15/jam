@@ -20,6 +20,7 @@ body {
 
 .bottom-content {
   display: flex;
+  margin: 0 1rem;
 }
 
 .video-wrapper {
@@ -28,6 +29,7 @@ body {
   margin: 0;
   width: 50%;
   overflow: hidden;
+  margin: 0 1rem;
 }
 .video-wrapper iframe {
 	position: absolute;
@@ -44,5 +46,17 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     font-size: .7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: .8rem;
+  }
+  .bottom-content {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
   }
 }
